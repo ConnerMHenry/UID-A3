@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsFeedView" id="dZH-Rd-h8c" customClass="NewsFeedItem" customModule="UID_A3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pl-f3-1zd" customClass="CardView" customModule="UID_A3" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="220" height="220"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWQ-iT-OuO" customClass="RoundedView" customModule="UID_A3" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="220" height="220"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3S-k5-o6g">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="220"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KBv-kP-M4P">
+                                            <rect key="frame" x="0.0" y="0.0" width="220" height="220"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="aHo-zx-Dcm">
+                                                    <rect key="frame" x="8" y="8" width="66" height="32"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtube" translatesAutoresizingMaskIntoConstraints="NO" id="fx2-7g-Ioh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="32" id="TAR-Jw-44i"/>
+                                                                <constraint firstAttribute="width" constant="32" id="kHf-st-8aI"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scorpion" translatesAutoresizingMaskIntoConstraints="NO" id="7eK-Av-uW7">
+                                                            <rect key="frame" x="34" y="0.0" width="32" height="32"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="32" id="NHQ-QA-8xR"/>
+                                                                <constraint firstAttribute="height" constant="32" id="tJq-rU-bH4"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drake - Youtube" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SV-KY-4ok">
+                                                    <rect key="frame" x="8" y="50" width="204" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX1-6U-Tag">
+                                                    <rect key="frame" x="8" y="78" width="204" height="128"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" red="0.88630368233844203" green="0.88202202203729008" blue="0.89058534263959388" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TX1-6U-Tag" firstAttribute="top" secondItem="1SV-KY-4ok" secondAttribute="bottom" constant="7.5" id="A0S-8i-M0h"/>
+                                                <constraint firstAttribute="bottom" secondItem="TX1-6U-Tag" secondAttribute="bottom" constant="14" id="D0Y-4K-feG"/>
+                                                <constraint firstItem="1SV-KY-4ok" firstAttribute="centerX" secondItem="KBv-kP-M4P" secondAttribute="centerX" id="MIL-wl-T7d"/>
+                                                <constraint firstAttribute="trailing" secondItem="TX1-6U-Tag" secondAttribute="trailing" constant="8" id="Qde-ny-Wya"/>
+                                                <constraint firstItem="1SV-KY-4ok" firstAttribute="leading" secondItem="KBv-kP-M4P" secondAttribute="leading" constant="8" id="RBv-jR-m2M"/>
+                                                <constraint firstItem="1SV-KY-4ok" firstAttribute="top" secondItem="KBv-kP-M4P" secondAttribute="top" constant="50" id="UwZ-tK-0pB"/>
+                                                <constraint firstItem="aHo-zx-Dcm" firstAttribute="leading" secondItem="KBv-kP-M4P" secondAttribute="leading" constant="8" id="c9p-E1-W8n"/>
+                                                <constraint firstItem="TX1-6U-Tag" firstAttribute="leading" secondItem="KBv-kP-M4P" secondAttribute="leading" constant="8" id="gEw-Rq-xLz"/>
+                                                <constraint firstItem="aHo-zx-Dcm" firstAttribute="top" secondItem="KBv-kP-M4P" secondAttribute="topMargin" id="pRH-Br-JGJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="1SV-KY-4ok" secondAttribute="trailing" constant="8" id="uPG-UP-nK0"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19689105309999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="d3S-k5-o6g" secondAttribute="trailing" id="2lZ-Zu-QKI"/>
+                                    <constraint firstAttribute="bottom" secondItem="d3S-k5-o6g" secondAttribute="bottom" id="LRS-2M-i5c"/>
+                                    <constraint firstItem="d3S-k5-o6g" firstAttribute="top" secondItem="zWQ-iT-OuO" secondAttribute="top" id="nMP-Yl-cj0"/>
+                                    <constraint firstItem="d3S-k5-o6g" firstAttribute="leading" secondItem="zWQ-iT-OuO" secondAttribute="leading" id="sD2-at-b9n"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zWQ-iT-OuO" secondAttribute="trailing" id="Lyr-Bo-A21"/>
+                            <constraint firstAttribute="bottom" secondItem="zWQ-iT-OuO" secondAttribute="bottom" id="U41-Vq-cjZ"/>
+                            <constraint firstItem="zWQ-iT-OuO" firstAttribute="top" secondItem="7pl-f3-1zd" secondAttribute="top" id="lzw-PO-ar0"/>
+                            <constraint firstItem="zWQ-iT-OuO" firstAttribute="leading" secondItem="7pl-f3-1zd" secondAttribute="leading" id="u6I-hS-j2V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FK0-L7-5HA"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="7pl-f3-1zd" firstAttribute="leading" secondItem="dZH-Rd-h8c" secondAttribute="leading" constant="10" id="K8h-Fa-a2W"/>
+                <constraint firstAttribute="trailing" secondItem="7pl-f3-1zd" secondAttribute="trailing" constant="10" id="dWp-wh-XhR"/>
+                <constraint firstItem="7pl-f3-1zd" firstAttribute="top" secondItem="dZH-Rd-h8c" secondAttribute="top" constant="10" id="jTo-r3-XBk"/>
+                <constraint firstAttribute="bottom" secondItem="7pl-f3-1zd" secondAttribute="bottom" constant="10" id="nVr-nN-O71"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9aB-ha-4OD"/>
+            <connections>
+                <outlet property="descriptionLbl" destination="TX1-6U-Tag" id="ltS-xJ-SR7"/>
+                <outlet property="drakeImg" destination="7eK-Av-uW7" id="Bx8-mS-nAn"/>
+                <outlet property="sourceImg" destination="fx2-7g-Ioh" id="tfe-X9-hfq"/>
+                <outlet property="titleLbl" destination="1SV-KY-4ok" id="pZX-hF-yau"/>
+            </connections>
+            <point key="canvasLocation" x="-203" y="-145"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Scorpion" width="220" height="220"/>
+        <image name="youtube" width="1155" height="1155"/>
+    </resources>
+</document>
